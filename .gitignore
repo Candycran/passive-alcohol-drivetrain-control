@@ -1,0 +1,12 @@
+# MATLAB autosave/cache
+*.asv
+slprj/
+*.slxc
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Keep result folders but ignore accidental temp files
+*.tmp
