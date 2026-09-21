@@ -14,6 +14,8 @@
   We first verify the basic sensing and actuation path.
 */
 
+#include <Arduino.h>
+
 const byte PIN_ALCOHOL = A0;
 const byte PIN_CO2 = A1;
 const byte PIN_ACCELERATOR = A2;
