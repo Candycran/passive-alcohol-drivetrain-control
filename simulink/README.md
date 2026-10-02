@@ -1,3 +1,3 @@
-# Simulink
+# Day 06 Simulink
 
-The dynamic drivetrain/vehicle-speed model will be added after the Arduino embedded-control baseline is verified.
+Build `day06_vehicle_speed_feedback.slx` by following `docs/day06_manual_simulink_build.md`.
