@@ -1,9 +1,7 @@
 # Passive Dual-Sensor Driver Alcohol Detection and Controlled Drivetrain Inhibit System
 
-## Project status
 Simulation-based mechatronics portfolio project using an Arduino Uno control prototype and a MATLAB/Simulink vehicle-response model.
 
-## Core concept
 The system passively monitors two simulated sensing signals located in the driver's breathing zone:
 
 1. Alcohol-vapour signal
@@ -23,14 +21,14 @@ The vehicle electrical/monitoring system remains powered during and after the in
 - LEDs and buzzer: driver warning/status
 - MATLAB/Simulink: dynamic vehicle-speed response and controlled-deceleration analysis
 
-## Repository structure
-- `firmware/` Arduino firmware
-- `docs/` engineering documentation
-- `simulink/` MATLAB/Simulink model files
-- `results/` plots and simulation evidence
+Key features:
+- Arduino Uno control
+- moving-average filtering
+- hysteresis
+- finite-state machine
+- progressive drivetrain limiting
+- EEPROM lockout and safe recovery
+- longitudinal vehicle dynamics
+- speed-feedback stop detection
 
-## Day 01 objective
-Build and verify the basic input/output path:
-sensor proxies -> Arduino -> motor driver -> DC motor.
-
-Day 01 does not yet implement alcohol intervention. Its purpose is to prove that all analog inputs are readable, accelerator demand can control drivetrain PWM, and status outputs function correctly.
+Important: simulation sensor values are not calibrated BAC/BrAC measurements, and PWM is not treated as vehicle speed.
